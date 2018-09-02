@@ -18,12 +18,12 @@ public class MainActivity extends AppCompatActivity {
 
         if(AppFunctions.doesDatabaseExist(MainActivity.this,"localdb_students_app")){
 
-
+            AppFunctions.getInto(MainActivity.this);
 
         }else{
 
             if(AppFunctions.createLocalDatabase(MainActivity.this)) {
-                //proceed next
+                AppFunctions.getInto(MainActivity.this);
             }
 
         }
