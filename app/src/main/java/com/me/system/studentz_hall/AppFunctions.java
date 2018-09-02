@@ -64,9 +64,23 @@ public class AppFunctions {
 
         }
 
+    }
+
+    public static boolean validateLogin(Context context , String reg , String pass){
 
 
+        return true;
+    }
 
+    public static void createPreference(Context context , String uname , String pass){
+
+        SharedPreferences pref = context.getSharedPreferences("MyPref", 0);
+        SharedPreferences.Editor editor = pref.edit();
+        editor.putString("session", "in");
+        editor.putString("uname", uname);
+        editor.putString("pass", pass);
+
+        editor.commit();
 
     }
 

@@ -14,7 +14,7 @@
         android:id="@+id/space" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/reg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/space"
@@ -26,11 +26,11 @@
         android:paddingRight="10dp" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/pass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText"
-        android:layout_alignStart="@+id/editText"
+        android:layout_alignLeft="@+id/reg"
+        android:layout_alignStart="@+id/reg"
         android:layout_below="@+id/space"
         android:ems="10"
         android:hint="Password"
@@ -48,7 +48,7 @@
         android:id="@+id/space2" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/in"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
